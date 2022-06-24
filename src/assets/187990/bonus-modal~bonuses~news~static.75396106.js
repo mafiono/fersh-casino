@@ -1,0 +1,1 @@
+(window["wpJsonpVue"]=window["wpJsonpVue"]||[]).push([["bonus-modal~bonuses~news~static"],{"9fd5":function(n,s,o){},ff51:function(n,s,o){"use strict";o("9fd5")}}]);

@@ -1,0 +1,1 @@
+module.exports = "<svg viewBox=\"0 0 12 12\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"1.02869\" width=\"15.5159\" height=\"1.45462\" transform=\"rotate(45 1.02869 0)\" fill=\"white\"></rect><rect y=\"10.9717\" width=\"15.5159\" height=\"1.45462\" transform=\"rotate(-45 0 10.9717)\" fill=\"white\"></rect></svg>"
