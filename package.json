@@ -28,7 +28,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "lodash.debounce": "^4.0.8",
-    "moment": "^2.29.3"
+    "moment": "^2.29.4"
   },
   "eslintConfig": {
     "root": true,
