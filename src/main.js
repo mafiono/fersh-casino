@@ -1,13 +1,13 @@
 import { computed, createApp } from 'vue'
 import to from 'await-to-js'
-import { getPlayerSettings } from '@/api'
+import { getPlayerSettings } from '@/api/helpers/addAuthHeader'
 import { setJWT } from '@/storage/localStorage'
 import App from './App.vue'
-import store from './store'
+import store from './store/index'
 import { i18n } from './i18n'
-import clickOutside from './directives'
-import { MESSENGER_ATTRIBUTES, TABS } from './constants'
-import { setLoadedLocales, setLoadedMessagesData } from './services'
+import clickOutside from './directives/index'
+import { MESSENGER_ATTRIBUTES, TABS } from './constants/index'
+import { setLoadedLocales, setLoadedMessagesData } from './services/groupMessagesList'
 
 let app
 
@@ -126,19 +126,19 @@ document.addEventListener('visibilitychange', async () => {
  * @type {App<Element>}
  */
 
-// app = createApp(App)
-//   .use(store)
-//   .use(i18n)
-//   .directive('clickOutside', clickOutside)
-//
-// app.mount('#micro-app-messenger')
-//
-// store.dispatch('common/setTheme', 'fresh-basic')
-// store.dispatch('common/setSiteName', 'fresh')
-// store.dispatch('player/setPlayerId', 2326453)
-// store.dispatch('player/setPlayerUuid', '56253-2323-23232-2399')
-//
-// TABS.forEach(tab => {
-//   store.dispatch('messages/loadUnreadMessagesCount', tab.key)
-//   store.dispatch('messages/loadMessagesList', tab.key)
-// })
+app = createApp(App)
+   .use(store)
+   .use(i18n)
+   .directive('clickOutside', clickOutside)
+
+ app.mount('#micro-app-messenger')
+
+ store.dispatch('common/setTheme', 'fresh-basic')
+ store.dispatch('common/setSiteName', 'fresh')
+ store.dispatch('player/setPlayerId', 2326453)
+ store.dispatch('player/setPlayerUuid', '56253-2323-23232-2399')
+
+ TABS.forEach(tab => {
+   store.dispatch('messages/loadUnreadMessagesCount', tab.key)
+   store.dispatch('messages/loadMessagesList', tab.key)
+ })

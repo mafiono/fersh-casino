@@ -1,5 +1,5 @@
-import { COMMON_HEADERS, instance } from '@/api/constants'
-import { retryRequestCall } from '@/api/helpers'
+import { COMMON_HEADERS, instance } from '@/api/helpers/addAuthHeader'
+import { retryRequestCall } from '@/api/helpers/retryRequesCall'
 
 export const reCallableRequest = async (config) => {
   try {

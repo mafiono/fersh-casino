@@ -1,4 +1,4 @@
-import { analyticClickEvent } from '@/services'
+import { analyticClickEvent } from '@/services/analytics'
 
 export const buttonClickAnalytics = (data, btn) => {
   const singleData = {
