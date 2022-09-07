@@ -1,4 +1,4 @@
-import { getJWT } from '@/storage/localStorage'
+import { getJWT } from '@/storage/localStorage/jwtMethods'
 
 /**
  * Перехватчик всех запросов для добавления им заголовка авторизации

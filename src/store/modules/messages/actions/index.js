@@ -7,7 +7,7 @@ import {
   setDeleteEvent,
   setDeleteAllEvent,
   setDeliveryGroupEvent,
-} from '@/api/requests'
+} from '@/api/helpers/createQueryParams'
 import { LOAD_DATA_LIMIT_VALUE } from '@/constants'
 import store from '@/store'
 

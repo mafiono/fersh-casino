@@ -40,7 +40,7 @@
 import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { useStore } from 'vuex'
 import debounce from 'lodash.debounce'
-import { getSiteIcons, analyticAvailableEvent, recalculateDropDownHeight } from '@/services'
+import { getSiteIcons, analyticAvailableEvent, recalculateDropDownHeight } from '@/services/siteicons'
 import Tabs from '@/components/Tabs'
 import Icon from '@/components/Icon'
 import ControlsPanel from '@/components/ControlsPanel'

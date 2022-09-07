@@ -1,4 +1,4 @@
-import { getLocalesString } from '@/api'
+import { getLocalesString } from '@/api/helpers/createQueryParams'
 import to from 'await-to-js'
 
 /**
